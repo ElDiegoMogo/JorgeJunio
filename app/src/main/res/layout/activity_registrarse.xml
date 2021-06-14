@@ -28,13 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="contraseña"
             android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/iniciarSesionBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_registrarse_sesion" />
 
         <EditText
             android:id="@+id/contrsenaConfirmacion"
@@ -42,7 +37,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
+            android:hint="confirmacion contraseña"
             android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registrarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registrarUsuario"
+            android:text="@string/btn_registrarse_sesion" />
     </LinearLayout>
 
 
